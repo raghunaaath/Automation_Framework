@@ -1,0 +1,23 @@
+package com.rmajhi.tests;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeMethod;
+
+import com.rmajhi.Driver.Driver;
+import com.rmajhi.constants.FrameworkConstants;
+
+public class BaseTest {
+	
+	@BeforeMethod
+	public void setUp() {
+		Driver.initDriver();
+	}
+
+	@AfterMethod
+	public void tearDown() {
+		Driver.quitDriver();
+	}
+
+}
