@@ -10,7 +10,7 @@ public class TC_002_HomePage extends BaseTest{
 
 	@Test
 	public void Login() {
-		Driver.driver.findElement(By.name("q")).sendKeys("C++",Keys.ENTER);
+		Driver.getDriver().findElement(By.name("q")).sendKeys("C++",Keys.ENTER);
 	}
 
 }

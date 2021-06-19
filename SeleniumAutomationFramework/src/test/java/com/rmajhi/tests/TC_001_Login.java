@@ -12,7 +12,7 @@ public class TC_001_Login extends BaseTest {
 	@Test
 	public void Login() {
 		
-		Driver.driver.findElement(By.name("q")).sendKeys("Java",Keys.ENTER);
+		Driver.getDriver().findElement(By.name("q")).sendKeys("Java",Keys.ENTER);
 	}
 
 
